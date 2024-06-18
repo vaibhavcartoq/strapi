@@ -53,14 +53,10 @@ export default {
         {
           uid: 'api::article.article',
           draft: {
-            url: 'http://localhost:3000/mlpnkobji/{Model}',
-            // query: {
-            //   type: 'post',
-            //   slug: '{Model}',
-            // },
+            url: 'http://localhost:3000/articleDraftPreview/{id}/{Model}',
           },
           published: {
-            url: 'http://localhost:3000/mlpnkobji/{Model}',
+            url: 'http://localhost:3000/articlePublishedPreview/{id}/{Model}',
           },
         },
       ],
