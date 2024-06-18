@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_article_block_specifications_blocks",
+  "info": {
+    "displayName": "Specifications Block"
+  },
+  "options": {},
+  "attributes": {
+    "Specifications": {
+      "type": "customField",
+      "customField": "plugin::specifications-picker.specifications"
+    }
+  }
+}

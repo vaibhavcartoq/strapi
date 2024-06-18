@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_article_block_section_blocks",
+  "info": {
+    "displayName": "Section Block"
+  },
+  "options": {},
+  "attributes": {
+    "Section_Block": {
+      "type": "blocks"
+    }
+  }
+}

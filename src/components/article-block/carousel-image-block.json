@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_article_block_carousel_image_blocks",
+  "info": {
+    "displayName": "Carousel Image Block",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Carousel": {
+      "type": "customField",
+      "customField": "plugin::custom-carousel-picker.carousel"
+    }
+  }
+}

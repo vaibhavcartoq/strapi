@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Car_Type": {
+      "type": "customField",
+      "customField": "plugin::cartype-picker.cartype"
+    },
+    "Model": {
+      "type": "customField",
+      "customField": "plugin::model-picker.model"
+    },
+    "Persona": {
+      "type": "customField",
+      "customField": "plugin::persona-picker.persona"
+    },
+    "Author": {
+      "type": "customField",
+      "customField": "plugin::author-picker.author"
+    },
+    "Headline": {
+      "type": "string"
+    },
+    "Featured_Image": {
+      "type": "customField",
+      "customField": "plugin::featured-image-picker.featured-image"
+    },
+    "IsDefault": {
+      "type": "customField",
+      "customField": "plugin::isdefault-toggle.isdefault"
+    },
+    "SEO": {
+      "type": "customField",
+      "customField": "plugin::seo-block.seo"
+    },
+    "Dynamic_Zone": {
+      "type": "dynamiczone",
+      "components": [
+        "article-block.carousel-image-block",
+        "article-block.image-block",
+        "article-block.section-block",
+        "article-block.specifications-block"
+      ]
+    }
+  }
+}

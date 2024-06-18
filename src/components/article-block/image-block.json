@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_article_block_image_blocks",
+  "info": {
+    "displayName": "Image Block",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "type": "customField",
+      "customField": "plugin::custom-image-picker.image"
+    }
+  }
+}
