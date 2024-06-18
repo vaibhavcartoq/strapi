@@ -70,7 +70,7 @@ const Input = React.forwardRef((props, ref) => {
         if (value) { json = JSON.parse(value); setJson(JSON.parse(value)); }
         if (value && json.image) {
             setSelectedImages(json.image);
-            setImageName(json.image.substring(0, json.image.lastIndexOf(".")).replaceAll("https://cartoq.s3.ap-south-1.amazonaws.com/", "").replaceAll("_", " ").replaceAll("-", " "));
+            setImageName(json.image.substring(0, json.image.lastIndexOf(".")).replaceAll("https://cartoq.s3.ap-south-1.amazonaws.com/", "").replaceAll("media/Car/","").replaceAll("_", " ").replaceAll("-", " "));
         }
         if (value && json.cartype) setSelectedCartype(json.cartype);
         if (value && json.model) SetSelectedModel(json.model);
@@ -283,7 +283,7 @@ const Input = React.forwardRef((props, ref) => {
                     disabled={disabled}
                     value={imageName.toString()}
                     required={required}
-                    onChange={(e) => { setSelectedImages(e); setImageName(e.substring(0, e.lastIndexOf(".")).replaceAll("https://cartoq.s3.ap-south-1.amazonaws.com/", "").replaceAll("_", " ").replaceAll("-", " ")) }}
+                    onChange={(e) => { setSelectedImages(e); setImageName(e.substring(0, e.lastIndexOf(".")).replaceAll("https://cartoq.s3.ap-south-1.amazonaws.com/", "").replaceAll("media/Car/","").replaceAll("_", " ").replaceAll("-", " ")) }}
                 >
                     {images && images.map((field) => (
                         <SingleSelectOption key={field.img} value={field.img}>

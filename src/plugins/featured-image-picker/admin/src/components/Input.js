@@ -24,7 +24,7 @@ const Input = React.forwardRef((props, ref) => {
   useEffect(() => {
     console.log("image url" + value)
     setSelectedImage(value);
-    if(selectedModel) setImageName(value.substring(0, value.lastIndexOf(".")).replaceAll("https://cartoq.s3.ap-south-1.amazonaws.com/", "").replaceAll("_", " ").replaceAll("-", " ").replaceAll(`${selectedModel} Color`, ""))
+    if(selectedModel) setImageName(value.substring(0, value.lastIndexOf(".")).replaceAll("https://cartoq.s3.ap-south-1.amazonaws.com/", "").replaceAll("media/Car/","").replaceAll("_", " ").replaceAll("-", " ").replaceAll(`${selectedModel} Color`, ""))
   }, [])
 
   useEffect(() => {
@@ -65,7 +65,7 @@ const Input = React.forwardRef((props, ref) => {
           disabled={disabled}
           value={imageName}
           required={required}
-          onChange={(e) => { setSelectedImage(e); handleChange(e); setImageName(e.substring(0, e.lastIndexOf(".")).replaceAll("https://cartoq.s3.ap-south-1.amazonaws.com/", "").replaceAll("_", " ").replaceAll("-", " ").replaceAll(`${selectedModel} Color`, "")) }}
+          onChange={(e) => { setSelectedImage(e); handleChange(e); setImageName(e.substring(0, e.lastIndexOf(".")).replaceAll("https://cartoq.s3.ap-south-1.amazonaws.com/", "").replaceAll("media/Car/","").replaceAll("_", " ").replaceAll("-", " ").replaceAll(`${selectedModel} Color`, "")) }}
         >
           {images.map((field) => (
             <SingleSelectOption key={field.img} value={field.img}>

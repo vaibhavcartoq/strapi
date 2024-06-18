@@ -137,7 +137,7 @@ const Input = React.forwardRef((props, ref) => {
         selectedImages.map((value) => (
           <div style={{ display: "flex", alignItems: "center" }}>
             <img src={value} style={{ height: "75px" }} />
-            <p style={{ paddingLeft: "10px" }}>{value.substring(0, value.lastIndexOf(".")).replaceAll("https://cartoq.s3.ap-south-1.amazonaws.com/", "").replaceAll("_", " ").replaceAll("-", " ").replaceAll(`${comboboxValue} Color`, "")}</p>
+            <p style={{ paddingLeft: "10px" }}>{value.substring(0, value.lastIndexOf(".")).replaceAll("https://cartoq.s3.ap-south-1.amazonaws.com/", "").replaceAll("media/Car/","").replaceAll("_", " ").replaceAll("-", " ").replaceAll(`${comboboxValue} Color`, "")}</p>
           </div>
         ))}
     </Flex>
